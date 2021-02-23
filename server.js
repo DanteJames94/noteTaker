@@ -6,7 +6,7 @@ let db = require("./db/db.json")
 
 
 const app = express();
-const port = 1701;
+const port = process.env.PORT || 1701;
 const mainDir = path.join(__dirname, "/public");
 
 app.use(express.static('public'));
